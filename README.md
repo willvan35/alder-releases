@@ -1,10 +1,10 @@
 # Alder
 
-Alder is a personal finance app that runs on your own computer. It pulls in your bank
-transactions, learns your categories as you label them, builds budgets from your
-paystub, and tracks how each month went. Your data stays on your computer.
+A personal finance app that runs on your own computer. Alder brings in your bank
+transactions, learns your categories as you label them, builds your budget from your
+paystub, and shows how each month went. Nothing is stored online.
 
-This page is where Alder is downloaded from. It holds only the installers.
+This repository is where you download Alder. It holds only the installers.
 
 ## Download
 
@@ -18,59 +18,52 @@ and, under **Assets**, download the file for your computer:
 
 Intel Macs aren't supported yet.
 
-## Install
+## Installing
 
-Alder isn't code-signed yet, so your computer will warn you the first time. That's
-expected.
+Alder isn't code-signed yet, so your computer warns you the first time. That's expected.
 
-**Windows**
-1. Run `Alder-Setup-x.y.z.exe`.
-2. If you see "Windows protected your PC", click **More info**, then **Run anyway**.
-3. Click through the installer. Alder opens when it's done, and it's in the Start menu
-   from then on.
+**Windows:** run the installer. If you see "Windows protected your PC", click
+**More info**, then **Run anyway**. Alder opens when it's done and stays in the Start menu.
 
-**Mac**
-1. Open the `.dmg` and drag **Alder** into **Applications**.
-2. Open Alder. When macOS says it can't check the app, click **Done**.
-3. Go to **System Settings → Privacy & Security**, scroll down, click **Open Anyway**
-   next to Alder, and confirm. After that it opens normally.
+**Mac:** open the `.dmg` and drag **Alder** into **Applications**, then open it. When
+macOS says it can't check the app, click **Done**. Go to **System Settings → Privacy &
+Security**, scroll down and click **Open Anyway** next to Alder. After that it opens
+normally.
 
 ## Getting started
 
-Alder walks you through setup the first time it opens:
-- **A passphrase (optional)** encrypts your data on disk.
-- **Bank data** comes from [SimpleFIN Bridge](https://bridge.simplefin.org), which
-  costs $1.50 a month and is billed by SimpleFIN. In SimpleFIN, choose **Connect an
-  app**, copy the setup token, and paste it into Alder.
+The first time it opens, Alder asks for two things:
 
-To look around first, turn on **Demo mode** in the avatar menu (top right). It shows a
-year of sample data and leaves your own data alone.
+1. **A passphrase**, if you want one. It encrypts your data on disk.
+2. **Your bank data.** Connect [SimpleFIN Bridge](https://bridge.simplefin.org) ($1.50 a
+   month, billed by SimpleFIN): choose **Connect an app**, copy the setup token and
+   paste it into Alder. You can also import CSV files from your bank, Venmo, Tiller,
+   Mint or YNAB.
 
-## Updates
+To look around first, turn on **Demo mode** in the avatar menu (top right). It uses
+sample data and leaves yours alone.
 
-When a new version is out, Alder shows a banner with a **Download** button. Install it
-the same way as the first time:
-- **Windows:** run the new installer.
-- **Mac:** drag the new Alder into Applications and choose **Replace**.
+## Updating
 
-Your data carries over.
+When a new version is out, Alder shows a banner with a **Download** button. Install the
+new version over the old one (on a Mac, drag it into Applications and choose
+**Replace**). Your data carries over, and it's backed up before anything changes.
 
 ## Your data
-
-Your data stays on your computer, in this folder:
 
 | Computer | Folder |
 |---|---|
 | Windows | `%APPDATA%\Alder` |
 | Mac | `~/Library/Application Support/Alder` |
 
-Updating or uninstalling Alder never deletes it. To back up or move to a new computer,
-copy that folder. Alder connects to the internet for only two things: SimpleFIN, to get
-your transactions, and this page, to check for a newer version. The update check sends
-nothing about you.
+Updating or uninstalling Alder never deletes this folder. To back up, or to move to a
+new computer, copy it.
+
+Alder goes online for only two things: SimpleFIN, to get your transactions, and this
+page, to check for a newer version. The update check sends nothing about you.
 
 ## Something wrong?
 
-Open an [issue](https://github.com/willvan35/alder-releases/issues) and say what
-happened. Attach the log if you can: `logs/alder.log` inside the data folder above.
-Look through it first, since it can include account or transaction names.
+Open an [issue](https://github.com/willvan35/alder-releases/issues) and describe what
+happened. If you can, attach `logs/alder.log` from the data folder above. Read it first,
+because it can include account or transaction names.
